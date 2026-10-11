@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <title>My Class Rountine</title>
+    </head>
+    <body>
+        <h1>Weekly Class Rountine</h1>
+        <img src="images/logo.png" alt="University Logo">
+        <table>
+ <tr>
+   <th colspan=4>Class Schedule - Fall 2026</th>
+ </tr>
+ <tr>
+   <th>Day</th>
+   <th>Time</th>
+   <th>Course</th>
+   <th>Room</th>
+ </tr>
+ <tr>
+   <td rowspan=2>Sunday</td>
+   <td>08:30 AM</td>
+   <td>Web Technologies (Theory)</td>
+   <td>D-101</td>
+ </tr>
+ <tr>
+   <td>10:00 AM</td>
+   <td>Web Technologies (Lab)</td>
+   <td>LAB-3</td>
+ </tr>
+ <tr>
+   <td>Tuesday</td>
+   <td>09:00 AM</td>
+   <td>Database Systems</td>
+   <td>D-204</td>
+ </tr>
+ <tr>
+   <td>Thursday</td>
+   <td>11:30 AM</td>
+   <td>Software Engineering</td>
+   <td>D-110</td>
+ </tr>
+</table>
+
+<h2>Class Feedback Form</h2>
+<form method="POST">
+    <fieldset>
+            <legend>Class Feedback</legend>
+    <label>Full Name: </label>
+    <input type="text" name="name" required>
+    <br><br>
+
+    <label>Email: </label>
+    <input type="email" name="email" required>
+    <br><br>
+
+    <label>Class Date: </label>
+    <input type="date" name="date" required>
+    <br><br>
+
+    <label>Course: </label>
+    <input type="text" name="course" required>
+    <br><br>
+
+    <label>Rating (1 to 5): </label>
+    <input type="number" name="rating" required>
+    <br><br>
+
+    <label>Class Type:</label>
+    <label><input type="radio" name="type" value="Theory" required> Theory</label>
+    <label><input type="radio" name="type" value="Lab"> Lab</label>
+    <br><br>
+
+    <label>Day: </label>
+    <select name="Day" required>
+    <option value="">Select...</option>
+    <option value="Sunday">Sunday</option>
+    <option value="Tuesday">Tuesday</option>
+    <option value="Thursday">Thursday</option>
+    </select>
+    <br><br>
+
+    <label>Comments: </label>
+    <br>
+    <input type="textarea" name="comments" minlength="10" required>
+    <br><br>
+</form>
+<button type="Submit">Send Feedback</button>
+</fieldset>
+    </body>
